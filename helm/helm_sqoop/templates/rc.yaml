@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: sqoop
+  labels:
+    app: sqoop
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sqoop
+  template:
+    metadata:
+      labels:
+        app: sqoop
+    spec:
+      containers:
+        - name: sqoop
+          image: stratio/sqoop-shell:0.2.2
+          imagePullPolicy: IfNotPresent
+          command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
+

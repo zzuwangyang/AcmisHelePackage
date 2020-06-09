@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: admichadoop
+  labels:
+    app: admichadoop
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: admichadoop
+  template:
+    metadata:
+      labels:
+        app: admichadoop
+    spec:
+      containers:
+      - name: acmishadoop
+        image: registry.cn-chengdu.aliyuncs.com/sunwu/acmis_hadoop:v0.1.10
+        imagePullPolicy: IfNotPresent
+        command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
+

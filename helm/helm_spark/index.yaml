@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  swspark:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-04T16:23:41.048856969+08:00"
+    description: swspark in rancher
+    digest: f5dc0fab2a2c3b2b422b9dcc7a57be203df051cb35b24b5bfdd376148d22bc01
+    name: swspark
+    type: application
+    urls:
+    - swspark-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-06-04T16:23:41.047987876+08:00"

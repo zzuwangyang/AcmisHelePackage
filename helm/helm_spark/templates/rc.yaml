@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: swspark
+  labels:
+    app: swspark
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: swspark
+  template:
+    metadata:
+      labels:
+        app: swspark
+    spec:
+      containers:
+      - name: swspark
+        image: swspark:0.1
+        imagePullPolicy: IfNotPresent
+        command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
+

@@ -1,0 +1,24 @@
+apiVersion: v1
+entries:
+  swhadoop:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-02T19:16:13.535035837+08:00"
+    description: Hadoop in rancher
+    digest: e9841e6c3427c23acc30ee7c832390b05b27e4cd5557b519835bfb94532181dd
+    name: swhadoop
+    type: application
+    urls:
+    - swhadoop-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-02T19:16:13.534057834+08:00"
+    description: Hadoop in rancher
+    digest: 768193195cdd80e9b5edf146ede78a2845444c9bf009b10033d300ac8a3e8da6
+    name: swhadoop
+    type: application
+    urls:
+    - swhadoop-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-06-02T19:16:13.532867418+08:00"

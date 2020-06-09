@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: hawq
+  labels:
+    app: hawq
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hawq
+  template:
+    metadata:
+      labels:
+        app: hawq
+    spec:
+      containers:
+        - name: hawq
+          image: akshays/hawq_hadoop:1.0.0
+          imagePullPolicy: IfNotPresent
+          command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
+

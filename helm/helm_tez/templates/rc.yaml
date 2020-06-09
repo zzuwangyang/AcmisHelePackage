@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: tez
+  labels:
+    app: tez
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tez
+  template:
+    metadata:
+      labels:
+        app: tez
+    spec:
+      containers:
+        - name: tez
+          image: dvoros/tez:0.9.1
+          imagePullPolicy: IfNotPresent
+          command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
+

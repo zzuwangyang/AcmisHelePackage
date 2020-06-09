@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: phoenix
+  labels:
+    app: phoenix
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phoenix
+  template:
+    metadata:
+      labels:
+        app: phoenix
+    spec:
+      containers:
+        - name: phoenix
+          image: nikolauska/phoenix:1.6.6-centos7
+          imagePullPolicy: IfNotPresent
+          command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
+
