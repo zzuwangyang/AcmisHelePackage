@@ -1,24 +1,69 @@
 apiVersion: v1
 entries:
-  swhadoop:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2020-06-02T19:16:13.535035837+08:00"
+  acmis-hadoop:
+  - apiVersion: v1
+    created: "2020-06-09T17:27:06.512480348+08:00"
     description: Hadoop in rancher
-    digest: e9841e6c3427c23acc30ee7c832390b05b27e4cd5557b519835bfb94532181dd
-    name: swhadoop
+    digest: 17ddc71b99433a2d69a3f36bf015c251c9f30b3d1da3800048ad39de875b6522
+    home: https://hadoop.apache.org/
+    icon: http://hadoop.apache.org/images/hadoop-logo.jpg
+    name: acmis-hadoop
+    sources:
+    - https://github.com/apache/hadoop
     type: application
     urls:
-    - swhadoop-0.3.0.tgz
-    version: 0.3.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2020-06-02T19:16:13.534057834+08:00"
+    - acmis-hadoop-0.1.23.tgz
+    version: 0.1.23
+  - apiVersion: v1
+    created: "2020-06-09T17:27:06.511408319+08:00"
     description: Hadoop in rancher
-    digest: 768193195cdd80e9b5edf146ede78a2845444c9bf009b10033d300ac8a3e8da6
-    name: swhadoop
+    digest: 188fceb3fb0df54cd3916df08e2b4c844304289e72355fe3a9536370ca569ca5
+    home: https://hadoop.apache.org/
+    icon: http://hadoop.apache.org/images/hadoop-logo.jpg
+    name: acmis-hadoop
+    sources:
+    - https://github.com/apache/hadoop
     type: application
     urls:
-    - swhadoop-0.1.0.tgz
-    version: 0.1.0
-generated: "2020-06-02T19:16:13.532867418+08:00"
+    - acmis-hadoop-0.1.22.tgz
+    version: 0.1.22
+  - apiVersion: v1
+    created: "2020-06-09T17:27:06.510228854+08:00"
+    description: Hadoop in rancher
+    digest: 3c919c9aa7ca9549ddd52e8e9f49753c88d1e8dfbfe1d80510d3e6543774cb9e
+    home: https://hadoop.apache.org/
+    icon: http://hadoop.apache.org/images/hadoop-logo.jpg
+    name: acmis-hadoop
+    sources:
+    - https://github.com/apache/hadoop
+    type: application
+    urls:
+    - acmis-hadoop-0.1.21.tgz
+    version: 0.1.21
+  - apiVersion: v1
+    created: "2020-06-09T17:27:06.508762243+08:00"
+    description: Hadoop in rancher
+    digest: cb594d873305a3fe4762aaf9604c336b5f77bdeb738757ec64d547527ce7af7f
+    home: https://hadoop.apache.org/
+    icon: http://hadoop.apache.org/images/hadoop-logo.jpg
+    name: acmis-hadoop
+    sources:
+    - https://github.com/apache/hadoop
+    type: application
+    urls:
+    - acmis-hadoop-0.1.20.tgz
+    version: 0.1.20
+  - apiVersion: v1
+    created: "2020-06-09T17:27:06.513407152+08:00"
+    description: Hadoop in rancher
+    digest: 93a615ee466bb205a60ce2005a7c487db75d2a1aac74f55b05611c5aecd10b52
+    home: https://hadoop.apache.org/
+    icon: http://hadoop.apache.org/images/hadoop-logo.jpg
+    name: acmis-hadoop
+    sources:
+    - https://github.com/apache/hadoop
+    type: application
+    urls:
+    - acmis-hadoop-0.1.9.tgz
+    version: 0.1.9
+generated: "2020-06-09T17:27:06.507414011+08:00"

@@ -1,30 +1,130 @@
 apiVersion: v1
 entries:
-  swhadoop:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2020-06-04T17:03:17.984615264+08:00"
+  acmis-hadoop:
+  - apiVersion: v1
+    created: "2020-06-09T17:27:10.85883499+08:00"
     description: Hadoop in rancher
-    digest: e9841e6c3427c23acc30ee7c832390b05b27e4cd5557b519835bfb94532181dd
-    name: swhadoop
+    digest: 17ddc71b99433a2d69a3f36bf015c251c9f30b3d1da3800048ad39de875b6522
+    home: https://hadoop.apache.org/
+    icon: http://hadoop.apache.org/images/hadoop-logo.jpg
+    name: acmis-hadoop
+    sources:
+    - https://github.com/apache/hadoop
     type: application
     urls:
-    - helm_hadoop/swhadoop-0.3.0.tgz
-    version: 0.3.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2020-06-04T17:03:17.983486109+08:00"
+    - helm_hadoop/acmis-hadoop-0.1.23.tgz
+    version: 0.1.23
+  - apiVersion: v1
+    created: "2020-06-09T17:27:10.857931831+08:00"
     description: Hadoop in rancher
-    digest: 768193195cdd80e9b5edf146ede78a2845444c9bf009b10033d300ac8a3e8da6
-    name: swhadoop
+    digest: 188fceb3fb0df54cd3916df08e2b4c844304289e72355fe3a9536370ca569ca5
+    home: https://hadoop.apache.org/
+    icon: http://hadoop.apache.org/images/hadoop-logo.jpg
+    name: acmis-hadoop
+    sources:
+    - https://github.com/apache/hadoop
     type: application
     urls:
-    - helm_hadoop/swhadoop-0.1.0.tgz
+    - helm_hadoop/acmis-hadoop-0.1.22.tgz
+    version: 0.1.22
+  - apiVersion: v1
+    created: "2020-06-09T17:27:10.856698846+08:00"
+    description: Hadoop in rancher
+    digest: 3c919c9aa7ca9549ddd52e8e9f49753c88d1e8dfbfe1d80510d3e6543774cb9e
+    home: https://hadoop.apache.org/
+    icon: http://hadoop.apache.org/images/hadoop-logo.jpg
+    name: acmis-hadoop
+    sources:
+    - https://github.com/apache/hadoop
+    type: application
+    urls:
+    - helm_hadoop/acmis-hadoop-0.1.21.tgz
+    version: 0.1.21
+  - apiVersion: v1
+    created: "2020-06-09T17:27:10.855465353+08:00"
+    description: Hadoop in rancher
+    digest: cb594d873305a3fe4762aaf9604c336b5f77bdeb738757ec64d547527ce7af7f
+    home: https://hadoop.apache.org/
+    icon: http://hadoop.apache.org/images/hadoop-logo.jpg
+    name: acmis-hadoop
+    sources:
+    - https://github.com/apache/hadoop
+    type: application
+    urls:
+    - helm_hadoop/acmis-hadoop-0.1.20.tgz
+    version: 0.1.20
+  - apiVersion: v1
+    created: "2020-06-09T17:27:10.859702659+08:00"
+    description: Hadoop in rancher
+    digest: 93a615ee466bb205a60ce2005a7c487db75d2a1aac74f55b05611c5aecd10b52
+    home: https://hadoop.apache.org/
+    icon: http://hadoop.apache.org/images/hadoop-logo.jpg
+    name: acmis-hadoop
+    sources:
+    - https://github.com/apache/hadoop
+    type: application
+    urls:
+    - helm_hadoop/acmis-hadoop-0.1.9.tgz
+    version: 0.1.9
+  swdrill:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-09T17:27:10.853284429+08:00"
+    description: drill in rancher
+    digest: a966d908e961bd228d2ff3103a61532cc4e46597a9628522a04f9b390a574d54
+    name: swdrill
+    type: application
+    urls:
+    - helm_drill/swdrill-0.1.0.tgz
+    version: 0.1.0
+  swflink:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-09T17:27:10.85377755+08:00"
+    description: flink in rancher
+    digest: 9a666befcd51f2717a00ab6e44c7e10c2a9fab10471c077273a584bd0afc7ab3
+    name: swflink
+    type: application
+    urls:
+    - helm_flink/swflink-0.1.0.tgz
+    version: 0.1.0
+  swgreenplum:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-09T17:27:10.854269399+08:00"
+    description: greenplum in rancher
+    digest: 77557308ec0871f623e62d208fc3945ea7d9985cea08124a8129a99f65f68f89
+    name: swgreenplum
+    type: application
+    urls:
+    - helm_greenplum/swgreenplum-0.1.0.tgz
+    version: 0.1.0
+  swhawq:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-09T17:27:10.860220498+08:00"
+    description: hawq in rancher
+    digest: f27264af51caec70ab035d4b4bd40596547564bd6779697cb814e80427e223e9
+    name: swhawq
+    type: application
+    urls:
+    - helm_hawq/swhawq-0.1.0.tgz
+    version: 0.1.0
+  swphoenix:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-09T17:27:10.86069411+08:00"
+    description: phoenix in rancher
+    digest: 4f4a83c71e9d3e69df774d8e7bfd86b33f4b4f42f49a1b99b6981737bed053cf
+    name: swphoenix
+    type: application
+    urls:
+    - helm_phoenix/swphoenix-0.1.0.tgz
     version: 0.1.0
   swspark:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-06-04T17:03:17.985153256+08:00"
+    created: "2020-06-09T17:27:10.862006206+08:00"
     description: swspark in rancher
     digest: f5dc0fab2a2c3b2b422b9dcc7a57be203df051cb35b24b5bfdd376148d22bc01
     name: swspark
@@ -32,4 +132,37 @@ entries:
     urls:
     - helm_spark/swspark-0.1.0.tgz
     version: 0.1.0
-generated: "2020-06-04T17:03:17.982091527+08:00"
+  swsqoop:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-09T17:27:10.862985049+08:00"
+    description: swsqoop in rancher
+    digest: a292cd08c6230ed6dad4ca9a9677a5a8fbcbddc897d4d2b501278ae5254f2be6
+    name: swsqoop
+    type: application
+    urls:
+    - helm_sqoop/swsqoop-0.1.0.tgz
+    version: 0.1.0
+  swtajo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-09T17:27:10.864176738+08:00"
+    description: tajo in rancher
+    digest: a195b8f9a69642e8f7dad42e6290280018934e9d9ce28a157dd149c8706126cf
+    name: swtajo
+    type: application
+    urls:
+    - helm_tajo/swtajo-0.1.0.tgz
+    version: 0.1.0
+  swtez:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-09T17:27:10.8646444+08:00"
+    description: tez in rancher
+    digest: e17d5a3514474219f1d83faa5af70e4f7f579e14ed67f955e0c3f7bc7101b87d
+    name: swtez
+    type: application
+    urls:
+    - helm_tez/swtez-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-06-09T17:27:10.852311527+08:00"

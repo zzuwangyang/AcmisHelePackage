@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  swgreenplum:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-04T23:51:32.391855004+08:00"
+    description: greenplum in rancher
+    digest: 77557308ec0871f623e62d208fc3945ea7d9985cea08124a8129a99f65f68f89
+    name: swgreenplum
+    type: application
+    urls:
+    - swgreenplum-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-06-04T23:51:32.390949064+08:00"

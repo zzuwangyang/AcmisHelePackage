@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  swtajo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-05T01:04:42.356197935+08:00"
+    description: tajo in rancher
+    digest: a195b8f9a69642e8f7dad42e6290280018934e9d9ce28a157dd149c8706126cf
+    name: swtajo
+    type: application
+    urls:
+    - swtajo-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-06-05T01:04:42.35531687+08:00"

@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  swsqoop:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-05T04:38:40.566801322+08:00"
+    description: swsqoop in rancher
+    digest: a292cd08c6230ed6dad4ca9a9677a5a8fbcbddc897d4d2b501278ae5254f2be6
+    name: swsqoop
+    type: application
+    urls:
+    - swsqoop-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-06-05T04:38:40.560244092+08:00"
