@@ -1,6 +1,7 @@
 apiVersion: v2
-name: swtajo
+name: apache-tajo-acmis
 description: "By ACMIS"
 type: application
-version: 0.1.0
-appVersion: 1.16.0
+version: 0.1.4
+icon: http://tajo.apache.org/images/tajo_logo.png
+

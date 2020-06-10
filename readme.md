@@ -1,5 +1,5 @@
 ## Hadoop
-已完成|已优化|可运行
+> 已完成|已优化|可运行
 
 https://www.yuque.com/gsunwu/acmis/okmnkc
 
@@ -8,7 +8,7 @@ mkdir -p /hadoop-3.2.1/input && cp -rf /hadoop-3.2.1/etc/hadoop/*.xml /hadoop-3.
 ./bin/hadoop version
 
 ## Sqoop
-已完成|已优化|可运行
+> 已完成|已优化|可运行
 
 https://github.com/dvoros/docker-sqoop
 未完成，谷歌百度没找到这个东西,是 sqoop 么
@@ -31,7 +31,7 @@ docker push registry.cn-chengdu.aliyuncs.com/sunwu/acmis_sqoop-shell:0.1.0
 
 
 ## Hawq
-已完成|已优化|-
+> 已完成|已优化|-
 
 https://www.yuque.com/gsunwu/acmis/oygxt3
 https://hub.docker.com/r/akshays/hawq_hadoop
@@ -59,7 +59,9 @@ docker tag akshays/hawq_hadoop:1.0.0 registry.cn-chengdu.aliyuncs.com/sunwu/acmi
 docker push registry.cn-chengdu.aliyuncs.com/sunwu/acmis_hawq:0.1.0
 
 ## Spark  
-已完成|已优化|可运行
+> 已完成|已优化|可运行
+
+
 pip3 install --upgrade pip
 pip3 install pyspark
 
@@ -80,7 +82,8 @@ textFile.count()
 
 
 ## Drill
-完成|已优化|可运行
+> 完成|已优化|可运行
+
 docker pull drill/apache-drill:1.17.0
 kc exec -it swdrill-7mcw4 /bin/bash
 cd opt/drill/
@@ -90,7 +93,8 @@ Apache Drill 1.17.0
 apache drill> 
 
 ## Flink
-完成|已优化|可运行
+> 完成|已优化|可运行
+
 icon: https://flink.apache.org/img/flink-header-logo.svg
 https://flink.apache.org/stateful-functions.html
 docker pull flink:scala_2.12
@@ -101,6 +105,8 @@ Version: 1.10.1, Commit ID: c5915cf
 
 
 ## Greenplum
+
+
 完成，（该如何运行greenplum?)
 http://docs.greenplum.org/6-4/common/gpdb-features.html
 docker pull datagrip/greenplum:6.1
@@ -116,6 +122,8 @@ su gpadmin
  20200604:15:47:58:006239 gpinitsystem:adc75c311b5b:gpadmin-[FATAL]:-Configuration file gpconfigs/gpinitsystem_config does not exist. Script Exiting!
 
 ## Phoenix 
+
+
 http://phoenix.apache.org/Phoenix-in-15-minutes-or-less.html
 Phoenix is an open source SQL skin for HBase. You use the standard JDBC APIs instead of the regular HBase client APIs to create tables, insert data, and query your HBase data.
 
@@ -126,6 +134,9 @@ https://github.com/phoenixframework/phoenix
 
 
 ## Tajo
+> 已完成|已优化|可运行
+
+icon: http://tajo.apache.org/images/tajo_logo.png
 http://tajo.apache.org/
 Apache Tajo is a robust big data relational and distributed data warehouse system for Apache Hadoop.
 sudo docker pull cdecl/hadoop-tajo:2.6.0

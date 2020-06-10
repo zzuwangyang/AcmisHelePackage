@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   swtez:
   - apiVersion: v2
-    appVersion: 1.16.0
+
     created: "2020-06-05T12:55:40.890789519+08:00"
     description: tez in rancher
     digest: e17d5a3514474219f1d83faa5af70e4f7f579e14ed67f955e0c3f7bc7101b87d

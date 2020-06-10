@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   swflink:
   - apiVersion: v2
-    appVersion: 1.16.0
+
     created: "2020-06-04T18:19:14.874499218+08:00"
     description: flink in rancher
     digest: 9a666befcd51f2717a00ab6e44c7e10c2a9fab10471c077273a584bd0afc7ab3

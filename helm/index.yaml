@@ -68,7 +68,7 @@ entries:
     version: 0.1.9
   swdrill:
   - apiVersion: v2
-    appVersion: 1.16.0
+
     created: "2020-06-09T17:27:10.853284429+08:00"
     description: drill in rancher
     digest: a966d908e961bd228d2ff3103a61532cc4e46597a9628522a04f9b390a574d54
@@ -79,7 +79,7 @@ entries:
     version: 0.1.0
   swflink:
   - apiVersion: v2
-    appVersion: 1.16.0
+
     created: "2020-06-09T17:27:10.85377755+08:00"
     description: flink in rancher
     digest: 9a666befcd51f2717a00ab6e44c7e10c2a9fab10471c077273a584bd0afc7ab3
@@ -90,7 +90,7 @@ entries:
     version: 0.1.0
   swgreenplum:
   - apiVersion: v2
-    appVersion: 1.16.0
+
     created: "2020-06-09T17:27:10.854269399+08:00"
     description: greenplum in rancher
     digest: 77557308ec0871f623e62d208fc3945ea7d9985cea08124a8129a99f65f68f89
@@ -101,7 +101,7 @@ entries:
     version: 0.1.0
   swhawq:
   - apiVersion: v2
-    appVersion: 1.16.0
+
     created: "2020-06-09T17:27:10.860220498+08:00"
     description: hawq in rancher
     digest: f27264af51caec70ab035d4b4bd40596547564bd6779697cb814e80427e223e9
@@ -112,7 +112,7 @@ entries:
     version: 0.1.0
   swphoenix:
   - apiVersion: v2
-    appVersion: 1.16.0
+
     created: "2020-06-09T17:27:10.86069411+08:00"
     description: phoenix in rancher
     digest: 4f4a83c71e9d3e69df774d8e7bfd86b33f4b4f42f49a1b99b6981737bed053cf
@@ -123,7 +123,7 @@ entries:
     version: 0.1.0
   swspark:
   - apiVersion: v2
-    appVersion: 1.16.0
+
     created: "2020-06-09T17:27:10.862006206+08:00"
     description: swspark in rancher
     digest: f5dc0fab2a2c3b2b422b9dcc7a57be203df051cb35b24b5bfdd376148d22bc01
@@ -134,7 +134,7 @@ entries:
     version: 0.1.0
   swsqoop:
   - apiVersion: v2
-    appVersion: 1.16.0
+
     created: "2020-06-09T17:27:10.862985049+08:00"
     description: swsqoop in rancher
     digest: a292cd08c6230ed6dad4ca9a9677a5a8fbcbddc897d4d2b501278ae5254f2be6
@@ -145,7 +145,7 @@ entries:
     version: 0.1.0
   swtajo:
   - apiVersion: v2
-    appVersion: 1.16.0
+
     created: "2020-06-09T17:27:10.864176738+08:00"
     description: tajo in rancher
     digest: a195b8f9a69642e8f7dad42e6290280018934e9d9ce28a157dd149c8706126cf
@@ -156,7 +156,7 @@ entries:
     version: 0.1.0
   swtez:
   - apiVersion: v2
-    appVersion: 1.16.0
+
     created: "2020-06-09T17:27:10.8646444+08:00"
     description: tez in rancher
     digest: e17d5a3514474219f1d83faa5af70e4f7f579e14ed67f955e0c3f7bc7101b87d

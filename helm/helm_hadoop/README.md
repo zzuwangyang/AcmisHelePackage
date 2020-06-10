@@ -1,8 +1,4 @@
-### Apache Hadoop 
-
-By ACMIS SW
-
-## 如何使用
+# 如何使用
 
 ## 1 进入系统环境
 
