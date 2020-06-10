@@ -1,6 +1,6 @@
 apiVersion: v2
 name: greenplum-acmis
-description: "By ACMIS"
+description: "First version by ACMIS. ."
 type: application
 version: 0.1.1
 icon: https://s3.amazonaws.com/greenplum.org/wp-content/uploads/2018/10/30175109/logo-gpdb1.svg

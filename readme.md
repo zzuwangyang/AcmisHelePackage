@@ -150,6 +150,64 @@ docker pull nikolauska/phoenix:1.6.6-centos
  
 https://github.com/phoenixframework/phoenix
 
+cd /opt/phoenix-server
+bash-4.4# ./bin/psql.py 
+At least one input file must be supplied
+usage: psql [-t table-name] [-h comma-separated-column-names | in-line]
+            [-d field-delimiter-char quote-char escape-char]<zookeeper>
+            <path-to-sql-or-csv-file>...
+ -a,--array-separator <arg>    Define the array element separator,
+                               defaults to ':'
+ -b,--binaryEncoding <arg>     Specifies binary encoding
+ -d,--delimiter <arg>          Field delimiter for CSV loader. A digit is
+                               interpreted as 1 -> ctrl A, 2 -> ctrl B ...
+                               9 -> ctrl I.
+ -e,--escape-character <arg>   Escape character for CSV loader. A digit is
+                               interpreted as a control character
+ -h,--header <arg>             Overrides the column names to which the CSV
+                               data maps and is case sensitive. A special
+                               value of in-line indicating that the first
+                               line of the CSV file determines the column
+                               to which the data maps
+ -l,--local-index-upgrade      Used to upgrade local index data by moving
+                               index data from separate table to separate
+                               column families in the same table.
+ -m,--map-namespace <arg>      Used to map table to a namespace matching
+                               with schema, require
+                               phoenix.schema.isNamespaceMappingEnabled to
+                               be enabled
+ -q,--quote-character <arg>    Quote character for CSV loader. A digit is
+                               interpreted as a control character
+ -s,--strict                   Use strict mode by throwing an exception if
+                               a column name doesn't match during CSV
+                               loading
+ -t,--table <arg>              Overrides the table into which the CSV data
+                               is loaded and is case sensitive
+ -u,--upgrade                  Upgrades tables specified as arguments by
+                               rewriting them with the correct row key for
+                               descending columns. If no arguments are
+                               specified, then tables that need to be
+                               upgraded will be displayed without being
+                               upgraded. Use the -b option to bypass the
+                               rewrite if you know that your data does not
+                               need to be upgrade. This would only be the
+                               case if you have not relied on auto padding
+                               for BINARY and CHAR data, but instead have
+                               always provided data up to the full max
+                               length of the column. See PHOENIX-2067 and
+                               PHOENIX-2120 for more information. Note
+                               that phoenix.query.timeoutMs and
+                               hbase.regionserver.lease.period parameters
+                               must be set very high to prevent timeouts
+                               when upgrading.
+Examples:
+  psql my_ddl.sql
+  psql localhost my_ddl.sql
+  psql localhost my_ddl.sql my_table.csv
+  psql -t MY_TABLE my_cluster:1825 my_table2012-Q3.csv
+  psql -t MY_TABLE -h COL1,COL2,COL3 my_cluster:1825 my_table2012-Q3.csv
+  psql -t MY_TABLE -h COL1,COL2,COL3 -d : my_cluster:1825 my_table2012-Q3.csv
+
 
 ## Tajo
 > 已完成|已优化|可运行
@@ -189,6 +247,22 @@ https://hub.docker.com/r/jiaqijackjupiter/tez
 相关文档
 https://blog.csdn.net/yamaxifeng_132/article/details/78887971
 
+## hbase
+docker pull boostport/hbase-phoenix-all-in-one:2.0-5.0
+docker run -itd --name hbase-phoenix-all-in-one2.0-5.0 boostport/hbase-phoenix-all-in-one:2.0-5.0
+dccker rm -f hbase-phoenix-all-in-one2.0-5.0
+docker exec -it   hbase-phoenix-all-in-one2.0-5.0 /bin/bash
+
+cd /opt/hbase
+bash-4.4# ./bin/hbase version
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/hbase/lib/phoenix-5.0.0-HBase-2.0-client.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hbase/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+HBase 2.0.0
+Source code repository git://kalashnikov.att.net/Users/stack/checkouts/hbase.git revision=7483b111e4da77adbfc8062b3b22cbe7c2cb91c1
+Compiled by stack on Sun Apr 22 20:26:55 PDT 2018
+From source with checksum a59e806496ef216732e730c746bbe5ac
 
 ## Rancher 改图标
 images/logos/main.svg

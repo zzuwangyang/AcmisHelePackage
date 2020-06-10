@@ -10,7 +10,7 @@ rmi:
 	docker rmi -f ${name}:${version}
 
 run:
-	docker run  -itd -p 22222:80 -p 22223:443  --name ${name}${version} ${name}:${version}
+	docker run  -itd   --name ${name}${version} ${repo}/${name}:${version}
 
 del:
 	docker rm -f ${name}${version}
@@ -29,3 +29,7 @@ login:
 	docker login --username=at2133n4o@aliyun.com registry.cn-chengdu.aliyuncs.com
 pull:
 	docker pull registry.cn-chengdu.aliyuncs.com/sunwu/acmis_hadoop:${version}
+pre:
+	yum install -y openssh-clients.x86_64
+
+

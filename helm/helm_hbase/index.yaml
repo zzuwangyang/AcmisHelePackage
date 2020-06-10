@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  swphoenix:
+  - apiVersion: v2
+
+    created: "2020-06-05T00:07:08.259821294+08:00"
+    description: phoenix in rancher
+    digest: 4f4a83c71e9d3e69df774d8e7bfd86b33f4b4f42f49a1b99b6981737bed053cf
+    name: swphoenix
+    type: application
+    urls:
+    - swphoenix-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-06-05T00:07:08.25702538+08:00"

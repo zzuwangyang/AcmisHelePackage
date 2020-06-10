@@ -1,6 +1,6 @@
 ### Apache Sqoop 
 
-By ACMIS SW
+First version by ACMIS. . SW
 
 ## 如何使用
 
