@@ -1,26 +1,37 @@
 ## Hadoop
-已完成，https://www.yuque.com/gsunwu/acmis/okmnkc
+已完成
+已优化
+
+https://www.yuque.com/gsunwu/acmis/okmnkc
 
 mkdir -p /hadoop-3.2.1/input && cp -rf /hadoop-3.2.1/etc/hadoop/*.xml /hadoop-3.2.1/input
 ./bin/hadoop jar /hadoop-3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar  grep input output 'dfs[a-z.]+'
 ./bin/hadoop version
 
-## Sqoom(p)
+## Sqoop
 已完成
+
 https://github.com/dvoros/docker-sqoop
 未完成，谷歌百度没找到这个东西,是 sqoop 么
 
 unauthorized: authentication required
 docker pull dvoros/sqoop:hive2-sqoop1.4.7
 
+
 docker pull stratio/sqoop-shell:0.2.2
-
-
 opt/sds/sqoop-shell/bin/shell
 Jun 04, 2020 8:37:07 PM java.util.prefs.FileSystemPreferences$1 run
 INFO: Created user preferences directory.
 Sqoop Shell: Type 'help' or '\h' for help.
 sqoop:000> 
+
+打包阿里云
+docker tag docker.io/stratio/sqoop-shell:0.2.2 registry.cn-chengdu.aliyuncs.com/sunwu/acmis_sqoop-shell:0.1.0
+docker push registry.cn-chengdu.aliyuncs.com/sunwu/acmis_sqoop-shell:0.1.0
+
+
+
+
 
 
 ## Hawq

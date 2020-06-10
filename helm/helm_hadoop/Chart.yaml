@@ -1,11 +1,11 @@
 apiVersion: v1
-name: acmis-hadoop
-description: "Hadoop in rancher"
-home: https://hadoop.apache.org/
-sources:
-  - https://github.com/apache/hadoop
-icon: http://hadoop.apache.org/images/hadoop-logo.jpg
+name: hadoop-acmis
+description: "Hadoop In ACMIS"
 type: application
+
+home: https://hadoop.apache.org/
+icon: http://hadoop.apache.org/images/hadoop-logo.jpg
+
 # 添加图标
 version: 0.1.23
 

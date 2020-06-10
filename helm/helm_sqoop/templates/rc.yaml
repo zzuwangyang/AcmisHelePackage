@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: sqoop
-          image: stratio/sqoop-shell:0.2.2
+          image: registry.cn-chengdu.aliyuncs.com/sunwu/acmis_sqoop-shell:0.1.0
           imagePullPolicy: IfNotPresent
           command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
 

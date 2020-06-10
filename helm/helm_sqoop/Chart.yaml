@@ -1,6 +1,10 @@
-apiVersion: v2
-name: swsqoop
-description: "swsqoop in rancher"
+apiVersion: v1
+name: sqoop-acmis
+description: "Sqoop In ACMIS"
 type: application
-version: 0.1.0
-appVersion: 1.16.0
+
+home: http://sqoop.apache.org/
+icon: http://sqoop.apache.org/images/sqoop-logo.png
+
+# 添加图表
+version: 0.1.3
