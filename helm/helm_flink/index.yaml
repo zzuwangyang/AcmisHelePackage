@@ -1,14 +1,3 @@
 apiVersion: v1
-entries:
-  swflink:
-  - apiVersion: v2
-
-    created: "2020-06-04T18:19:14.874499218+08:00"
-    description: flink in rancher
-    digest: 9a666befcd51f2717a00ab6e44c7e10c2a9fab10471c077273a584bd0afc7ab3
-    name: swflink
-    type: application
-    urls:
-    - swflink-0.1.0.tgz
-    version: 0.1.0
-generated: "2020-06-04T18:19:14.873725887+08:00"
+entries: {}
+generated: "2020-06-11T01:39:48.287950567+08:00"
