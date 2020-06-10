@@ -1,8 +1,8 @@
-## 如何运行
-### 1 进入 Hadoop Spark
+# 如何运行
+## 1 进入 Hadoop Spark
 通过 kubectl 进入 Hadoop Spark 环境。
 
-### 2 执行测试命令
+## 2 执行测试命令
 执行下面命令即可测试。
 ``` 
 # 进入工作目录 spark-3.0.0-preview2-bin-hadoop2.7

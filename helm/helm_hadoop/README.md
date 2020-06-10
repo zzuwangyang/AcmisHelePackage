@@ -4,11 +4,11 @@ By ACMIS SW
 
 ## 如何使用
 
-### 1 运行 kubectl
+## 1 进入系统环境
 
 在 Rancher Dashboard 中找到 “Launch kubectl”
 
-### 2 找到 Hadoop
+## 2 找到 Hadoop
 
 执行 kubectl get po -A， 找到目标。如下，目标名称（NAME）是 admichadoop-8sh2s ，命名空间为 hadoop-p-gntrk
 
@@ -18,7 +18,7 @@ NAMESPACE        NAME                                       READY   STATUS    RE
 hadoop-p-gntrk   admichadoop-8sh2s                          1/1     Running   0          4m22s
 ```
 
-### 3 进入容器 Apache Hadoop
+## 3 进入容器 Apache Hadoop
 
  执行如下命令进入 Hadoop。
 
@@ -37,7 +37,7 @@ kubectl exec -it -n hadoop-p-gntrk   admichadoop-8sh2s  /bin/bash
 ```
 
 
-### 4  执行测试脚本
+## 4  执行测试脚本
 
 输入 ./rundemo 执行测试脚本。
 
@@ -57,7 +57,7 @@ kubectl exec -it -n hadoop-p-gntrk   admichadoop-8sh2s  /bin/bash
 [root@admichadoop-8sh2s hadoop-3.2.1]#
 ```
 
-### 5 运行成功
+## 5 运行成功
 
 下面即为运行结果。
 

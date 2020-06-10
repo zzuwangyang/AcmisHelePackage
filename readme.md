@@ -80,7 +80,7 @@ textFile.count()
 
 
 ## Drill
-完成
+完成|已优化|可运行
 docker pull drill/apache-drill:1.17.0
 kc exec -it swdrill-7mcw4 /bin/bash
 cd opt/drill/
@@ -90,7 +90,8 @@ Apache Drill 1.17.0
 apache drill> 
 
 ## Flink
-完成
+完成|已优化|可运行
+icon: https://flink.apache.org/img/flink-header-logo.svg
 https://flink.apache.org/stateful-functions.html
 docker pull flink:scala_2.12
 kc exec -it flink-hsgst /bin/bash
