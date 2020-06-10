@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: swspark
+  name: spark
   labels:
-    app: swspark
+    app: spark
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: swspark
+      app: spark
   template:
     metadata:
       labels:
-        app: swspark
+        app: spark
     spec:
       containers:
-      - name: swspark
-        image: swspark:0.1
+      - name: spark
+        image: registry.cn-chengdu.aliyuncs.com/sunwu/acmis_spark:v0.1.10
         imagePullPolicy: IfNotPresent
         command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
 

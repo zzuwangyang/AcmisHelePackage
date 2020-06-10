@@ -1,6 +1,6 @@
-apiVersion: v2
-name: swhawq
-description: "hawq in rancher"
+apiVersion: v1
+name: apache-hawq-acmis
+description: ""
 type: application
-version: 0.1.0
-appVersion: 1.16.0
+icon: http://hawq.apache.org/images/logo-hawq.png
+version: 0.1.2

@@ -1,6 +1,5 @@
 ## Hadoop
-已完成
-已优化
+已完成|已优化|可运行
 
 https://www.yuque.com/gsunwu/acmis/okmnkc
 
@@ -9,7 +8,7 @@ mkdir -p /hadoop-3.2.1/input && cp -rf /hadoop-3.2.1/etc/hadoop/*.xml /hadoop-3.
 ./bin/hadoop version
 
 ## Sqoop
-已完成
+已完成|已优化|可运行
 
 https://github.com/dvoros/docker-sqoop
 未完成，谷歌百度没找到这个东西,是 sqoop 么
@@ -26,19 +25,15 @@ Sqoop Shell: Type 'help' or '\h' for help.
 sqoop:000> 
 
 打包阿里云
+docker pull stratio/sqoop-shell:0.2.2
 docker tag docker.io/stratio/sqoop-shell:0.2.2 registry.cn-chengdu.aliyuncs.com/sunwu/acmis_sqoop-shell:0.1.0
 docker push registry.cn-chengdu.aliyuncs.com/sunwu/acmis_sqoop-shell:0.1.0
 
 
-
-
-
-
 ## Hawq
-未完成，镜像运行不成功
+已完成|已优化|-
+
 https://www.yuque.com/gsunwu/acmis/oygxt3
-
-
 https://hub.docker.com/r/akshays/hawq_hadoop
 docker pull akshays/hawq_hadoop:latest
 [root@k8s helm]# docker images|grep hawq
@@ -58,8 +53,13 @@ hawq start cluster
 psql -d postgres
 
 
+
+docker pull akshays/hawq_hadoop:1.0.0
+docker tag akshays/hawq_hadoop:1.0.0 registry.cn-chengdu.aliyuncs.com/sunwu/acmis_hawq:0.1.0
+docker push registry.cn-chengdu.aliyuncs.com/sunwu/acmis_hawq:0.1.0
+
 ## Spark  
-完成
+已完成|已优化|可运行
 pip3 install --upgrade pip
 pip3 install pyspark
 

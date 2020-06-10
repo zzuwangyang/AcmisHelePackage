@@ -1,11 +1,10 @@
 #!/usr/bin/make
-name :=swspark
-version := 0.1
+repo :=registry.cn-chengdu.aliyuncs.com/sunwu
+name :=acmis_spark
+version := v0.1.10
 
 v :
-	@echo "version ${name}:${version}"
-build :
-	docker build -t ${name}:${version} .
+	@echo "${repo}/${name}:${version}"
 rmi:
 	docker rmi -f ${name}:${version}
 
@@ -14,3 +13,15 @@ run: delete
 
 delete:
 	docker rm -f  ${name}${version}
+
+bld :
+	docker build -t ${repo}/${name}:${version} .
+
+push:
+#	docker push  --disable-content-trust  ${repo}/${name}:${version}
+	docker push ${repo}/${name}:${version}
+
+login:
+	docker login --username=at2133n4o@aliyun.com registry.cn-chengdu.aliyuncs.com
+pull:
+	docker pull ${repo}/${name}:${version}

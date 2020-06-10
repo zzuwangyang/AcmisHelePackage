@@ -1,6 +1,5 @@
-apiVersion: v2
-name: swdrill
-description: "drill in rancher"
+apiVersion: v1
+name: apache-drill-acmis
+description: "Drill Drill In ACMIS"
 type: application
 version: 0.1.0
-appVersion: 1.16.0
