@@ -1,6 +1,6 @@
 # 如何运行
 ## 1 进入 Hadoop Spark
-通过 kubectl 进入 Hadoop Spark 环境。
+通过 kubectl 进入 Hadoop Spark 环境。进入系统环境参考：https://www.yuque.com/gsunwu/blog/pc7rx7
 
 ## 2 执行测试命令
 执行下面命令即可测试。
