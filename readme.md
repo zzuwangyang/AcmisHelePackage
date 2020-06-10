@@ -105,24 +105,42 @@ Version: 1.10.1, Commit ID: c5915cf
 
 
 ## Greenplum
+>完成|已优化|可运行
 
 
-完成，（该如何运行greenplum?)
 http://docs.greenplum.org/6-4/common/gpdb-features.html
 docker pull datagrip/greenplum:6.1
 docker exec -it greenplum:6.1 /bin/bash
 source greenplum_path.sh 
- 
-cd /opt/greenplum-db-6.1.0
-/opt/greenplum-db-6.1.0
 
-su gpadmin
-./bin/gpinitsystem -c gpconfigs/gpinitsystem_config -h gpconfigs/hostfile_gpinitsystem
- 20200604:15:47:58:006239 gpinitsystem:adc75c311b5b:gpadmin-[INFO]:-Checking configuration parameters, please wait...
- 20200604:15:47:58:006239 gpinitsystem:adc75c311b5b:gpadmin-[FATAL]:-Configuration file gpconfigs/gpinitsystem_config does not exist. Script Exiting!
+icon :https://s3.amazonaws.com/greenplum.org/wp-content/uploads/2018/10/30175109/logo-gpdb1.svg
+root@59b6ae73575a:/# su gpadmin -l -c "/entrypoint.sh"
+STARTING... (about 30 sec)
+STARTED
+GP_USER: tester
+GP_PASSWORD: pivotal
+GP_DB: testdb
+CREATE ROLE
+CREATE DATABASE
+NOTICE:  resource queue required -- using default resource queue "pg_default"
+CREATE ROLE
+CREATE DATABASE
++-------------------------------------------------
+|  CREATE USER tester WITH PASSWORD 'pivotal' SUPERUSER;
+|  CREATE USER guest WITH PASSWORD 'guest';
++-------------------------------------------------
++-------------------------------------------------
+|  CREATE DATABASE testdb WITH OWNER tester;
+|  CREATE DATABASE guest WITH OWNER guest;
++-------------------------------------------------
+
+ 
 
 ## Phoenix 
 
+docker pull bergwerkio/phoenix-1.3:1.0
+
+icon: http://phoenix.apache.org/images/phoenix-logo-small.png
 
 http://phoenix.apache.org/Phoenix-in-15-minutes-or-less.html
 Phoenix is an open source SQL skin for HBase. You use the standard JDBC APIs instead of the regular HBase client APIs to create tables, insert data, and query your HBase data.
@@ -152,6 +170,7 @@ From source with checksum c56324e6262ceb0fd474ce2c1b7d276
 This command was run using /usr/local/tajo-0.10.0/tajo-common-0.10.0.jar
 
 ## Tez
+
 https://tez.apache.org/
 The Apache TEZ® project is aimed at building an application framework which allows for a complex directed-acyclic-graph of tasks for processing data. It is currently built atop Apache Hadoop YARN.
 镜像没法 pull  unauthorized: authentication required

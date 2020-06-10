@@ -2,5 +2,5 @@ apiVersion: v2
 name: swphoenix
 description: "By ACMIS"
 type: application
+icon: http://phoenix.apache.org/images/phoenix-logo-small.png
 version: 0.1.0
-

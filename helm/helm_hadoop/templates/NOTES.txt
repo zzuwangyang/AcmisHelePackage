@@ -1,7 +1,7 @@
-##  ÈçºÎÔËĞĞ
-1. ÔËĞĞ kubectl¡£
+##  å¦‚ä½•è¿è¡Œ
+1. è¿è¡Œ kubectlã€‚
 
-2. Ö´ĞĞ kubectl get po -A£¬ ÕÒµ½Ä¿±ê¡£ÈçÏÂ£¬Ä¿±êÃû³Æ£¨NAME£©ÊÇ admichadoop-8sh2s £¬ÃüÃû¿Õ¼äÎª hadoop-p-gntrk
+2. æ‰§è¡Œ kubectl get po -Aï¼Œ æ‰¾åˆ°ç›®æ ‡ã€‚å¦‚ä¸‹ï¼Œç›®æ ‡åç§°ï¼ˆNAMEï¼‰æ˜¯ admichadoop-8sh2s ï¼Œå‘½åç©ºé—´ä¸º hadoop-p-gntrk
 ```
 > kubectl get po -A
 NAMESPACE        NAME                                       READY   STATUS    RESTARTS   AGE
@@ -10,24 +10,24 @@ hadoop-p-gntrk   admichadoop-8sh2s                          1/1     Running   0 
 ...
 ```
 
-3. ½øÈëÈİÆ÷ Apache Hadoop
-Ö´ĞĞÈçÏÂÃüÁî½øÈë Hadoop¡£
+3. è¿›å…¥å®¹å™¨ Apache Hadoop
+æ‰§è¡Œå¦‚ä¸‹å‘½ä»¤è¿›å…¥ Hadoopã€‚
 ```
-kubectl exec -it -n ÃüÃû¿Õ¼ä Ãû³Æ /bin/bash
--it£º ÒÔ½»»¥µÄ·½Ê½ÔËĞĞ
--n£º Ö¸¶¨ÃüÃû¿Õ¼ä
-Ãû³Æ£ºÒª½øÈëµÄ Hadoop µÄÃû³Æ
+kubectl exec -it -n å‘½åç©ºé—´ åç§° /bin/bash
+-itï¼š ä»¥äº¤äº’çš„æ–¹å¼è¿è¡Œ
+-nï¼š æŒ‡å®šå‘½åç©ºé—´
+åç§°ï¼šè¦è¿›å…¥çš„ Hadoop çš„åç§°
 
-±¾ÀıÖĞ£¬¾Í¿ÉÒÔÖ´ĞĞÒÔÏÂÃüÁî½øÈë Hadoop
+æœ¬ä¾‹ä¸­ï¼Œå°±å¯ä»¥æ‰§è¡Œä»¥ä¸‹å‘½ä»¤è¿›å…¥ Hadoop
 kubectl exec -it -n hadoop-p-gntrk   admichadoop-8sh2s  /bin/bash
 
-ÊµÀı£º
+å®ä¾‹ï¼š
 > kubectl exec -it -n hadoop-p-gntrk   admichadoop-8sh2s  /bin/bash
 [root@admichadoop-8sh2s hadoop-3.2.1]#
 ```
 
 
-4. ÊäÈë ./rundemo Ö´ĞĞ²âÊÔ½Å±¾¡£
+4. è¾“å…¥ ./rundemo æ‰§è¡Œæµ‹è¯•è„šæœ¬ã€‚
 ```
 [root@admichadoop-8sh2s hadoop-3.2.1]# ./rundemo
 --------start run hadoop demo -------
@@ -685,4 +685,4 @@ kubectl exec -it -n hadoop-p-gntrk   admichadoop-8sh2s  /bin/bash
 [root@admichadoop-8sh2s hadoop-3.2.1]#
 ```
 
-5. ÔËĞĞ³É¹¦
+5. è¿è¡ŒæˆåŠŸ
