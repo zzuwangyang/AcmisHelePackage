@@ -47,6 +47,8 @@ akshays/hawq_hadoop                  latest              a3c19228f955        3 y
 
 su bigdata
 start-dfs.sh
+
+
 cd /home/bigdata/hawq/hawq-2.0.0/
 source greenplum_path.sh
 hawq start cluster

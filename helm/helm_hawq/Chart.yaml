@@ -3,4 +3,4 @@ name: apache-hawq-acmis
 description: "First version by ACMIS. ."
 type: application
 icon: http://hawq.apache.org/images/logo-hawq.png
-version: 0.1.2
+version: 0.1.3

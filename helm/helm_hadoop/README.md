@@ -2,7 +2,7 @@
 
 ## 1 进入系统环境
 
-在 Rancher Dashboard 中找到 “Launch kubectl”
+在 Rancher Dashboard 中找到 “Launch kubectl”。进入系统环境参考：https://www.yuque.com/gsunwu/blog/pc7rx7
 
 ## 2 找到 Hadoop
 
