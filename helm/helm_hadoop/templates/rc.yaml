@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: acmishadoop
-        image: registry.cn-chengdu.aliyuncs.com/sunwu/acmis_hadoop:v0.1.10
+        image: registry.cn-chengdu.aliyuncs.com/sunwu/acmis_hadoop:v0.1.15
         imagePullPolicy: IfNotPresent
-        command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
+#        command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
 

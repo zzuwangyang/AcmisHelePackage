@@ -1,0 +1,14 @@
+#apiVersion: extensions/v1beta1
+#kind: Ingress
+#metadata:
+#  name: hostinfo-ingress
+#spec:
+#  rules:
+#    - host: hadoop.cn
+#      http:
+#        paths:
+#          - path: /
+#            backend:
+#              serviceName: hadoop-service
+#              servicePort: 2200
+#
