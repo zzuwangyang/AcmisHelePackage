@@ -3,8 +3,21 @@
 
 https://www.yuque.com/gsunwu/acmis/okmnkc
 
-mkdir -p /hadoop-3.2.1/input && cp -rf /hadoop-3.2.1/etc/hadoop/*.xml /hadoop-3.2.1/input
+# 切换到 Hadoop 工作目录
+cd  /hadoop-3.2.1
+
+# 创建输入配置文件夹，-p：父文件夹不存在时，创建父文件夹
+mkdir -p /hadoop-3.2.1/input 
+
+# 复制配置文件
+cp -rf /hadoop-3.2.1/etc/hadoop/*.xml /hadoop-3.2.1/input
+
+# 执行任务
 ./bin/hadoop jar /hadoop-3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar  grep input output 'dfs[a-z.]+'
+
+# 查看执行结果
+cat output/*
+
 ./bin/hadoop version
 
 ## Sqoop
