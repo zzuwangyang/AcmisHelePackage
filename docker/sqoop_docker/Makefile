@@ -1,4 +1,0 @@
-bld:
-	docker pull stratio/sqoop-shell:0.2.2
-    docker tag docker.io/stratio/sqoop-shell:0.2.2 registry.cn-chengdu.aliyuncs.com/sunwu/acmis_sqoop-shell:0.1.0
-    docker push registry.cn-chengdu.aliyuncs.com/sunwu/acmis_sqoop-shell:0.1.0

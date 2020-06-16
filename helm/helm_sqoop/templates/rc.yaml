@@ -1,22 +1,23 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: sqoop
+  name: {{ .Values.name }}
   labels:
-    app: sqoop
+    app: {{ .Values.name }}
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: sqoop
+      app: {{ .Values.name }}
   template:
     metadata:
       labels:
-        app: sqoop
+        app: {{ .Values.name }}
     spec:
       containers:
-        - name: sqoop
-          image: registry.cn-chengdu.aliyuncs.com/sunwu/acmis_sqoop-shell:0.1.0
-          imagePullPolicy: IfNotPresent
-          command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
+        - name: {{ .Values.name }}
+          # image: registry.cn-chengdu.aliyuncs.com/sunwu/acmis_sqoop-shell:0.1.0
+          image: {{ .Values.image.hub }}/{{ .Values.image.namespace }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+#          command: ["/init.sh" ]
 

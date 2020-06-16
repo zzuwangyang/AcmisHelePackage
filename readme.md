@@ -325,3 +325,12 @@ sudo yum install -y nodejs
 https://www.cnblogs.com/zhi-leaf/p/10979629.html
 https://nodejs.org/dist/latest-v10.x/
 npm install -g yarn
+
+
+
+## ssh、镜像迁移到阿里云
+Hadoop,完成
+Drill，8801 完成
+Sqoom, 8802 30002
+Hawq, Spark, , Flink,Greenplum,Phoenix, Tajo,Hbase
+ 

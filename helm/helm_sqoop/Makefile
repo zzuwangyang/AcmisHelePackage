@@ -17,3 +17,18 @@ del:
 
 exe:
 	docker exec -it ${name}${version} /bin/bash
+
+hv:
+	helm install test . --dry-run --debug
+hi:
+	helm install ${name} .
+hu:
+	helm uninstall ${name}
+hr: hu hi
+
+kp:
+	kubectl describe po
+kpo:
+	kubectl get po
+ksvc:
+	kubectl get svc
