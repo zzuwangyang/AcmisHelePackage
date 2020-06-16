@@ -1,18 +1,25 @@
 #!/usr/bin/make
 repo :=registry.cn-chengdu.aliyuncs.com/sunwu
 name :=acmis_spark
-version := v0.1.10
+version := v0.1.11
+sshport :=8805
+t:
+	docker build -f Dockerfiletest -t ${repo}/${name}:${version} .
 
 v :
-	@echo "${repo}/${name}:${version}"
+	@echo "version ${name}:${version}"
+
 rmi:
 	docker rmi -f ${name}:${version}
 
-run: delete
-	docker run -it --name ${name}${version} ${name}:${version} /bin/bash
+run:
+	docker run  -p ${sshport}:22  -itd --privileged  --name ${name}${version} ${repo}/${name}:${version}
 
-delete:
-	docker rm -f  ${name}${version}
+del:
+	docker rm -f ${name}${version}
+
+e:
+	docker exec -it ${name}${version} bash
 
 bld :
 	docker build -t ${repo}/${name}:${version} .
@@ -24,4 +31,13 @@ push:
 login:
 	docker login --username=at2133n4o@aliyun.com registry.cn-chengdu.aliyuncs.com
 pull:
-	docker pull ${repo}/${name}:${version}
+	docker pull registry.cn-chengdu.aliyuncs.com/sunwu/acmis_hadoop:${version}
+pre:
+	yum install -y openssh-clients.x86_64
+
+logs:
+	docker logs ${name}${version}
+
+rb:del bld run e
+
+nb:bld run e

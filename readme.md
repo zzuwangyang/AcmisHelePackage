@@ -333,7 +333,8 @@ Hadoop,完成
 Sqoom, 8802 ,30002
 Drill，8801 ,30004
 Hawq,30005
-Spark, , Flink,Greenplum,Phoenix, Tajo,Hbase
+Spark, 30006
+Flink,Greenplum,Phoenix, Tajo,Hbase
 
 
 
