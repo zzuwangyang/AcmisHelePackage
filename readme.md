@@ -330,7 +330,12 @@ npm install -g yarn
 
 ## ssh、镜像迁移到阿里云
 Hadoop,完成
-Drill，8801 完成
-Sqoom, 8802 30002
-Hawq, Spark, , Flink,Greenplum,Phoenix, Tajo,Hbase
+Sqoom, 8802 ,30002
+Drill，8801 ,30004
+Hawq,30005
+Spark, , Flink,Greenplum,Phoenix, Tajo,Hbase
+
+
+
+
  
