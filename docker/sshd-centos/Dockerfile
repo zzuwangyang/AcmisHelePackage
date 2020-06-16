@@ -19,10 +19,11 @@ RUN echo root|passwd --stdin root
 #SSH -开机自启动   配合 ENTRYPOINT /sbin/init
 RUN mkdir -p /var/run/sshd
 RUN /usr/bin/ssh-keygen -A
-RUN echo '/usr/sbin/sshd -D' >> /etc/rc.d/rc.local
-RUN chmod +x  /etc/rc.d/rc.local
+#RUN echo '/usr/sbin/sshd -D' >> /etc/rc.d/rc.local
+#RUN chmod +x  /etc/rc.d/rc.local
 # init program
-
+RUN echo $'/usr/sbin/sshd -D\n\
+tail -f /dev/null\n' >/init.sh && chmod +x /init.sh
 # hadoop
-ENTRYPOINT /sbin/init
+ENTRYPOINT  /init.sh
 #ENTRYPOINT /usr/sbin/sshd -D

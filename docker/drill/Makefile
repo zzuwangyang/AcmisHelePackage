@@ -1,8 +1,8 @@
 #!/usr/bin/make
 repo :=registry.cn-chengdu.aliyuncs.com/sunwu
-name :=acmis-drill
-version := v0.1.0
-sshport :=8801
+name :=acmis-drill1
+version := v0.1.1
+sshport :=8901
 t:
 	docker build -f Dockerfiletest -t ${repo}/${name}:${version} .
 
@@ -39,3 +39,5 @@ logs:
 	docker logs ${name}${version}
 
 rb:del bld run e
+
+nb:bld run e
