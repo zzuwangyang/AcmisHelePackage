@@ -1,0 +1,7 @@
+apiVersion: v2
+name: apache-tajo-acmis
+description: "First version by ACMIS. ."
+type: application
+version: 0.2.5
+icon: http://tajo.apache.org/images/tajo_logo.png
+

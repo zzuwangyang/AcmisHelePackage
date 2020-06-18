@@ -24,6 +24,9 @@ e:
 bld :
 	docker build -t ${repo}/${name}:${version} .
 
+bldf :
+	docker build -t ${repo}/${name}:${version} -f $(MF)
+
 push:
 #	docker push  --disable-content-trust  ${repo}/${name}:${version}
 	docker push ${repo}/${name}:${version}

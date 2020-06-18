@@ -1,0 +1,7 @@
+apiVersion: v1
+name: apache-flink-acmis
+description: "First version by ACMIS. ."
+type: application
+version: 0.2.6
+icon: https://flink.apache.org/img/flink-header-logo.svg
+

@@ -1,3 +1,6 @@
+## 
+docker run -d --restart=unless-stopped -p 20000:80 -p 20001:443 -v /var/rancher:/var/lib/rancher/ rancher/rancher:stable
+
 ## Hadoop
 > 已完成|已优化|可运行
 
@@ -334,9 +337,29 @@ Sqoom, 8802 ,30002
 Drill，8801 ,30004
 Hawq,30005
 Spark, 30006
-Flink,Greenplum,Phoenix, Tajo,Hbase
+Flink,30007
+Greenplum, 30008
+Phoenix,  
+Tajo, ubuntu 14.10
+Hbase
+
+E: Release file for http://deb.debian.org/debian/dists/buster-updates/InRelease is not valid yet (invalid for another 7h 38min 2s). Updates for this repository will not be applied.
+更新系统时间
 
 
+
+## ssh test
+名称  结果
+drill  ok
+Flink  x e ok
+Hadoop ok
+Hawq   ok 
+Hbase  x  e r 就是  acmis-phoenix x ok
+Phoenix x e r x  ok 
+spark   ok
+sqoop   ok
+Tajo    x e r x ok 
+Greenplum   x e r ok 
 
 
  

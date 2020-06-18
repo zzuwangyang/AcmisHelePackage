@@ -4,7 +4,7 @@ find ./|grep tgz|xargs rm
 find .|awk '{if(index($0,"package.sh")>0) print $0}'|/bin/bash && ./package.sh
  
  ## 自动打包
- while true; do find ./|grep tgz|xargs rm ; find .|awk '{if(index($0,"package.sh")>0) print $0}'|/bin/bash && ./package.sh; sleep 3; done
+ while true; do find ./|grep tgz|xargs rm ; find .|awk '{if(index($0,"package.sh")>0) print $0}'|/bin/bash && ./package.sh; sleep 5; done
 
  
  ## 删除所有 tgz

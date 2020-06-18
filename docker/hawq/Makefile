@@ -3,6 +3,8 @@ repo :=registry.cn-chengdu.aliyuncs.com/sunwu
 name :=acmis-hawq
 version := v0.1.1
 sshport :=8901
+bldf :
+	docker build -t ${repo}/${name}:${version} -f $(MF)
 t:
 	docker build -f Dockerfiletest -t ${repo}/${name}:${version} .
 

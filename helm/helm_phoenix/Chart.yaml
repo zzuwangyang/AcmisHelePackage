@@ -1,6 +1,0 @@
-apiVersion: v2
-name: apache-phoenix-acmis
-description: "First version by ACMIS. ."
-type: application
-icon: http://phoenix.apache.org/images/phoenix-logo-small.png
-version: 0.1.2

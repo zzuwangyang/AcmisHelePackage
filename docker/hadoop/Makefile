@@ -4,7 +4,8 @@ name :=acmis_hadoop
 version := v0.1.15
 t:
 	docker build -f Dockerfiletest -t ${repo}/${name}:${version} .
-
+bldf :
+	docker build -t ${repo}/${name}:${version} -f $(MF)
 v :
 	@echo "version ${name}:${version}"
 

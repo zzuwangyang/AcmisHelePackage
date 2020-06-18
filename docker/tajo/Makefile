@@ -1,8 +1,8 @@
 #!/usr/bin/make
 repo :=registry.cn-chengdu.aliyuncs.com/sunwu
-name :=acmis_spark
-version := v0.1.11
-sshport :=8805
+name :=acmis-tajo
+version := v0.1.1
+sshport :=8932
 bldf :
 	docker build -t ${repo}/${name}:${version} -f $(MF)
 t:

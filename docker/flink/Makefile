@@ -1,10 +1,8 @@
 #!/usr/bin/make
 repo :=registry.cn-chengdu.aliyuncs.com/sunwu
-name :=acmis_spark
-version := v0.1.11
-sshport :=8805
-bldf :
-	docker build -t ${repo}/${name}:${version} -f $(MF)
+name :=acmis-flink
+version := v0.1.1
+sshport :=8909
 t:
 	docker build -f Dockerfiletest -t ${repo}/${name}:${version} .
 
@@ -13,7 +11,8 @@ v :
 
 rmi:
 	docker rmi -f ${name}:${version}
-
+bldf :
+	docker build -t ${repo}/${name}:${version} -f $(MF)
 run:
 	docker run  -p ${sshport}:22  -itd --privileged  --name ${name}${version} ${repo}/${name}:${version}
 

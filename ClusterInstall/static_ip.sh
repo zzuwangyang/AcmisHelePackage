@@ -1,0 +1,1 @@
+echo "192.168.101.121     k8smaster">>/etc/hostsecho "192.168.101.122     k8snode1">>/etc/hostsecho "192.168.101.123     k8snode2">>/etc/hostshostnamectl set-hostname k8smasterhostnamectl set-hostname k8snode1hostnamectl set-hostname k8snode2

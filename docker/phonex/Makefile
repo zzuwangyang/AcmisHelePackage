@@ -1,13 +1,12 @@
 #!/usr/bin/make
 repo :=registry.cn-chengdu.aliyuncs.com/sunwu
-name :=acmis_spark
-version := v0.1.11
-sshport :=8805
-bldf :
-	docker build -t ${repo}/${name}:${version} -f $(MF)
+name :=acmis-phoenix
+version := v0.2.1
+sshport :=8912
 t:
 	docker build -f Dockerfiletest -t ${repo}/${name}:${version} .
-
+bldf :
+	docker build -t ${repo}/${name}:${version} -f $(MF)
 v :
 	@echo "version ${name}:${version}"
 

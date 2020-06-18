@@ -2,7 +2,8 @@
 repo :=registry.cn-chengdu.aliyuncs.com/sunwu
 name :=centos-sshd
 version := v0.1.0
-
+bldf :
+	docker build -t ${repo}/${name}:${version} -f $(MF)
 v :
 	@echo "version ${repo}/${name}:${version}"
 
